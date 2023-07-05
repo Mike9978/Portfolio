@@ -5,157 +5,160 @@ html {
 
 /* Custom Scrollbar Styles */
 ::-webkit-scrollbar {
-width: 7px;
+  width: 7px;
 }
 
 ::-webkit-scrollbar-track {
-background: #000;
+  background: #000;
 }
 
 ::-webkit-scrollbar-thumb {
-background: #ffeb3b;
+  background: #ffeb3b;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-background: #ffeb3b;
+  background: #ffeb3b;
 }
 
 
 /* Header CSS */
-header {  
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding: 20px;
-position: relative;
-z-index: 9;
-transition: all 0.7s;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  position: relative;
+  z-index: 9;
+  transition: all 0.7s;
 }
 
 
 .logo img {
-height: auto;
-padding-left: 45px;
-order: 1;
-height: auto;
-max-width: 250px;
-display: block;
+  height: auto;
+  padding-left: 45px;
+  order: 1;
+  height: auto;
+  max-width: 250px;
+  display: block;
 }
 
 nav {
-position: relative;
+  position: relative;
 }
 
 .menu {
-display: flex;
-list-style: none;
-padding: 40px;
+  display: flex;
+  list-style: none;
+  padding: 40px;
 }
 
 .menu li {
-margin-right: 30px;
+  margin-right: 30px;
 
 }
 
 nav .menu li a {
-color: white;
-text-decoration: none;
-font-family: fantasy;
-position: relative;
-padding-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-family: fantasy;
+  position: relative;
+  padding-left: 20px;
 
 }
 
 /* Hamburger Menu  */
 .sidemenu-toggler {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-width: 30px;
-height: 20px;
-cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
 }
 
 .sidemenu-toggler span {
-display: block;
-/* width: 100%;
+  display: block;
+  /* width: 100%;
 height: 2px; */
-background-color: white;
-margin-bottom: 4px;
+  background-color: white;
+  margin-bottom: 4px;
 }
 
 .sidemenu-toggler {
-display: none;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-position: fixed;
-top: 20px;
-right: 20px;
-width: 40px;
-height: 40px;
-z-index: 10;
-cursor: pointer;
-transition: transform 0.3s ease-in-out;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
 }
 
 .sidemenu-toggler span {
-display: block;
-width: 25px;
-height: 3px;
-background-color: #ffffff;
-margin-bottom: 5px;
-transition: background-color 0.3s ease-in-out;
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  margin-bottom: 5px;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .sidemenu.open {
-transform: translateX(0);  /* Move the menu to the visible position */
-max-width: 400px;
+  transform: translateX(0);
+  /* Move the menu to the visible position */
+  max-width: 400px;
 }
 
 .sidemenu {
-position: fixed;
-top: 0;
-right: 0;
-width: 80%;
-height: 100%;
-background-color: rgba(0, 0, 0, 0.8);
-transform: translateX(100%);
-transition: transform 0.3s ease-in-out;
-z-index: 9;
-backdrop-filter: blur(5px);
-transition: transform 0.3s ease-in-out; /* Add smooth transition effect */
-transform: translateX(100%); /* Start with the menu off-screen */
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 9;
+  backdrop-filter: blur(5px);
+  transition: transform 0.3s ease-in-out;
+  /* Add smooth transition effect */
+  transform: translateX(100%);
+  /* Start with the menu off-screen */
 }
 
 .sidemenu nav ul {
-list-style: none;
-padding: 0;
-margin-top: 50px;
+  list-style: none;
+  padding: 0;
+  margin-top: 50px;
 }
 
 .sidemenu nav ul li {
-text-align: center;
-margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .sidemenu nav ul li a {
-color: #ffffff;
-font-size: 20px;
-text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 .sidemenu .close {
-position: absolute;
-top: 0px;
-right: 20px;
-width: 40px;
-height: 40px;
-/* background-image: url(images/hamburegrmenuclose.png); */
-background-size: cover;
-background-position: center;
-cursor: pointer;
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  /* background-image: url(images/hamburegrmenuclose.png); */
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
 }
 
 /* Mobile View header */
@@ -180,9 +183,12 @@ cursor: pointer;
     display: block;
     width: 25px;
     height: 3px;
-    background-color: #fff; /* Set the color of the lines */
-    margin: 5px auto; /* Adjust the spacing between the lines */
-    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+    background-color: #fff;
+    /* Set the color of the lines */
+    margin: 5px auto;
+    /* Adjust the spacing between the lines */
+    transition: background-color 0.3s ease;
+    /* Add a smooth transition effect */
   }
 
   .menu {
@@ -195,8 +201,10 @@ cursor: pointer;
     top: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Add a transparent background color */
-    backdrop-filter: blur(10px); /* Add the blur effect */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Add a transparent background color */
+    backdrop-filter: blur(10px);
+    /* Add the blur effect */
     z-index: 9999;
     width: 200px;
     padding: 25px;
@@ -226,30 +234,32 @@ cursor: pointer;
     position: sticky;
     top: 0;
     z-index: 999;
-    background-color: #000000; 
+    background-color: #000000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: top 0.3s ease-in-out; 
+    transition: top 0.3s ease-in-out;
   }
 
   /* Hide the sticky header when scrolling down */
   header.sticky {
-    top: -100px; /* Adjust this value as needed to hide the header completely */
+    top: -100px;
+    /* Adjust this value as needed to hide the header completely */
   }
 }
 
 /* Desktop View header */
 @media (min-width: 768px) {
   header {
-    position: relative; 
-    top: 0; 
-    box-shadow: none; 
+    position: relative;
+    top: 0;
+    box-shadow: none;
   }
 }
 
 .sidemenu nav ul {
   list-style: none;
   padding: 0;
-  margin: 90px 0; /* Add margin here to create space above the menu items */
+  margin: 90px 0;
+  /* Add margin here to create space above the menu items */
 }
 
 .sidemenu nav ul li {
@@ -286,13 +296,15 @@ cursor: pointer;
 
 .sidemenu .social-icons {
   margin-top: -30px;
-  margin-right: 0; /* Add negative margin to create space between social icons */
+  margin-right: 0;
+  /* Add negative margin to create space between social icons */
   display: flex;
   align-items: center;
 }
 
 .sidemenu .social-icons li {
-  margin: 0 5px; /* Adjust the margin as per your preference */
+  margin: 0 5px;
+  /* Adjust the margin as per your preference */
 }
 
 .sidemenu .social-icons li i {
@@ -304,17 +316,20 @@ cursor: pointer;
   display: block;
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #ffffff; /* White background */
+  background-color: #ffffff;
+  /* White background */
   color: #000;
   font-size: 16px;
   text-align: center;
   text-decoration: none;
   border-radius: 5px;
 }
+
 /* Add styles for the X icon when the menu is open */
 .sidemenu-toggler.open span:nth-child(1) {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
+
 .sidemenu-toggler.open span:nth-child(2) {
   opacity: 0;
 }
@@ -322,22 +337,23 @@ cursor: pointer;
 .sidemenu-toggler.open span:nth-child(3) {
   transform: rotate(45deg) translate(-5px, -6px);
 }
+
 /* Header CSS Ends Here */
 /* Main Body */
 
 /*  <section id="welcome"> */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    background-color: black;
-    color: #fff;
-    position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: black;
+  color: #fff;
+  position: relative;
 }
 
 #welcome {
-    background-color: transparent;
-    padding: 10px 0;
-    text-align: center;
+  background-color: transparent;
+  padding: 10px 0;
+  text-align: center;
 }
 
 #welcome .container {
@@ -361,74 +377,74 @@ body {
 }
 
 .hero-text {
-    font-size: 18px;
-    cursor: default;
+  font-size: 18px;
+  cursor: default;
 }
 
 .title {
-    background-color: silver;
-    font-size: 14px;
-    line-height: 24px;
-    padding: 10px 30px;
-    border-radius: 20px;
+  background-color: silver;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 10px 30px;
+  border-radius: 20px;
 }
 
 .name {
-    font-size: 80px;
-    letter-spacing: -1px;
+  font-size: 80px;
+  letter-spacing: -1px;
 }
 
 .designation {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .designation::before {
-    content: "";
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-image: url(images/designationicon.png);
-    background-size: cover;
-    margin-right: 14px;
-    
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(images/designationicon.png);
+  background-size: cover;
+  margin-right: 14px;
+
 }
 
 .email a,
 .phone a {
   color: white;
   text-decoration: none;
-  font-family: 'poppins',sans-serif;
+  font-family: 'poppins', sans-serif;
 }
 
 .social-icons.d-flex {
-    display: flex;
-    list-style: none;
-    padding: 0;
-  }
-  
-  .social-icons.d-flex li {
-    margin-right: 30px;
-    margin-top: 40px;
-    
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
 
-  }
-  
-  .social-icons.d-flex li:last-child {
-    margin-right: 0;
-    
-  }
-  
-  .social-icons.d-flex li i {
-    color: white;
-    font-size: 25px;
-    cursor: pointer;
-    
-  }
-  
+.social-icons.d-flex li {
+  margin-right: 30px;
+  margin-top: 40px;
+
+
+}
+
+.social-icons.d-flex li:last-child {
+  margin-right: 0;
+
+}
+
+.social-icons.d-flex li i {
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+
+}
+
 .container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .QAimage img {
@@ -437,45 +453,45 @@ body {
   max-width: 100%;
   height: auto;
   padding-left: 130px;
-  
+
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
-    
+  font-size: 24px;
+  font-weight: bold;
+
 }
 
 .nav-links {
-    list-style: none;
+  list-style: none;
 }
 
 .nav-links li {
-    display: inline-block;
-    margin-left: 10px;
+  display: inline-block;
+  margin-left: 10px;
 }
 
 .nav-links li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
 }
 
 .hero {
-    padding: 100px 0;
-    text-align: center;
+  padding: 100px 0;
+  text-align: center;
 }
 
 .hero-text {
-    font-size: 36px;
-    margin-bottom: 30px;
-    color: #fff;
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #fff;
 }
 
 .hero-subtext {
-    font-size: 20px;
-    margin-bottom: 30px;
-    color: #ccc;
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #ccc;
 }
 
 /* Styles for mobile view */
@@ -494,18 +510,21 @@ body {
     padding: 50px 0;
     padding-top: 30px;
   }
-  
+
   .QAimage img {
     max-width: 100%;
     height: auto;
     padding-left: 5px;
-    border-radius: 20px; /* Add border radius */
-    box-shadow: 0px 0px 20px; /* Set the box shadow */
+    border-radius: 20px;
+    /* Add border radius */
+    box-shadow: 0px 0px 20px;
+    /* Set the box shadow */
   }
-  
+
   .menu {
     display: none;
   }
+
   .title {
     font-size: 12px;
     line-height: 20px;
@@ -563,12 +582,14 @@ body {
 .about-content .image {
   flex: 1;
   margin-left: 90px;
-  
+
 }
+
 .about-content .image img {
   border-radius: 20%;
   box-shadow: 0px 0px 20px;
 }
+
 .about-content .text {
   flex: 1;
 }
@@ -652,15 +673,19 @@ body {
     margin-bottom: 20px;
     /* position: relative; */
     overflow: visible;
-    margin: 0 auto; /* Align the image in the center */
+    margin: 0 auto;
+    /* Align the image in the center */
   }
 
   .about-content .image img {
     max-width: 300px;
     max-height: 300px;
-    border-radius: 20px; /* Add border radius */
-    box-shadow: 0px 0px 20px; /* Set the box shadow */
-    margin-top: 50px; /* Add a negative margin to lift the image up and show the full box shadow */
+    border-radius: 20px;
+    /* Add border radius */
+    box-shadow: 0px 0px 20px;
+    /* Set the box shadow */
+    margin-top: 50px;
+    /* Add a negative margin to lift the image up and show the full box shadow */
   }
 
   .about-content .about-text {
@@ -683,7 +708,8 @@ body {
   .about-Education .left-side h3,
   .about-Education .right-side h3 {
     margin: 0;
-    margin-bottom: 40px; /* Adjust spacing between pointer dot and text */
+    margin-bottom: 40px;
+    /* Adjust spacing between pointer dot and text */
   }
 
   .about-Education .left-side ul,
@@ -759,7 +785,8 @@ body {
 
 .skills li span {
   max-width: 105px;
-  text-align: center; /* Center align the text */
+  text-align: center;
+  /* Center align the text */
   max-height: 100% !important;
 }
 
@@ -800,7 +827,7 @@ body {
   align-items: center;
   overflow: hidden;
   box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
-  
+
 }
 
 .certificate-box img {
@@ -812,7 +839,8 @@ body {
 
 @media (max-width: 768px) {
   .certificate-box {
-    width: 300px;;
+    width: 300px;
+    ;
     height: 200px;
   }
 }
@@ -881,95 +909,97 @@ body {
     max-width: 400px;
   }
 }
+
 /* Work Experience CSS Ends Here */
 
 /* Contact ME Form  */
 #contact {
-    background-color: transparent;
-    padding: 50px 0;
-    text-align: center;
-    color: #fff;
+  background-color: transparent;
+  padding: 50px 0;
+  text-align: center;
+  color: #fff;
 }
 
 #contact h2 {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 form {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 0 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 input,
 textarea {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    font-size: 16px;
-    border: 1px solid #fff;
-    border-radius: 4px;
-    background-color: transparent;
-    color: #fff;
-    box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #fff;
+  box-sizing: border-box;
 }
 
 textarea {
-    height: 120px;
+  height: 120px;
 }
 
 button {
-    width: 100%;
-    background-color: transparent;
-    color: #fff;
-    border: 2px solid #ffeb3b;
-    padding: 10px 20px;
-    font-size: 18px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  width: 100%;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #ffeb3b;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
+
 .custom-container-class {
   width: 20px;
   height: 10px;
 }
 
 @media (max-width: 480px) {
-    #contact form {
-      max-width: 100%;
-      padding: 0 10px;
-    }
+  #contact form {
+    max-width: 100%;
+    padding: 0 10px;
+  }
 }
 
 button:hover {
-    background-color: #ffeb3b;
+  background-color: #ffeb3b;
 }
 
 footer {
-    background-color: transparent;
-    color: #fff;
-    text-align: center;
-    padding: 5px;
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
 }
 
 .scroll-indicator {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 5px;
-    background-color: #ffeb3b;
-    z-index: 9999;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #ffeb3b;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 @media (max-width: 768px) {
-    .nav-links li {
-        display: block;
-        margin: 5px 0;
-    }
+  .nav-links li {
+    display: block;
+    margin: 5px 0;
+  }
 }
 
 /*  Scroll To Top Button Starts Here  */
@@ -994,14 +1024,19 @@ footer {
   background-position: center center;
   scroll-behavior: smooth;
 }
+
 #scrollToTopButton:hover {
   opacity: 1;
 }
+
 #scrollToTopButton:before {
-  content: "\f062"; /* Font Awesome arrow-up icon code */
-  font-family: "Font Awesome"; /* Replace with the font-family of your icon font */
+  content: "\f062";
+  /* Font Awesome arrow-up icon code */
+  font-family: "Font Awesome";
+  /* Replace with the font-family of your icon font */
   font-weight: bold;
 }
+
 /*  Scroll To Top Button Ends Here  */
 
 /* Form Sweat alerts pop-up CSS Starts Here */
@@ -1018,4 +1053,5 @@ footer {
 .custom-content-class {
   color: gold;
 }
+
 /* Form Sweat alerts pop-up CSS Ends Here */
