@@ -1,4 +1,5 @@
 // hamburger menu Functionality
+
 document.addEventListener('DOMContentLoaded', function () {
   var hamburgerMenu = document.querySelector('.sidemenu-toggler');
   var sidemenu = document.querySelector('.sidemenu');
