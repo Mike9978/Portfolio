@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+
+<!--  header Code  -->
+<header>
+  <div class="logo">
+    <img src="images/logo3.png" alt="Logo">
+  </div>
+  <nav>
+    <ul class="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#myskills">Skills</a></li>
+      <li><a href="#clients">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <!-- Mobile View Side Menu -->
+  <a href="javascript:void(0);" class="sidemenu-toggler">
+    <span></span>
+    <span></span>
+    <span></span>
+</a>
+<div class="sidemenu">
+  <a href="javascript:void(0);" class="close"></a>
+  <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#myskills">Skills</a></li>
+        <li><a href="#clients">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+  </nav>
+  <footer>
+    <ul class="social-icons d-flex">
+      <li><a href="https://wa.me/919820976984" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/mehul-baria-3b4987216/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+      <li><a href="https://www.instagram.com/mehul997?igshid=MmU2YjMzNjRIOQ==" target="_blank"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+    <a href="tel:+91 9820976984" class="call-me-button">Call Me</a>
+  </footer>
+</div>
+</header>
+
+<body>
+  <section id="welcome">
+      <div class="container">
+          <div class="text">
+              <span class="title">Hello I'm </span><br>
+              <span class="name">MEHUL  J. BARIA </span><br>
+              <span class="designation">Manual Tester</span>
+              <br>
+              <span class="email"><a href="mailto:mehulbaria997@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;mehulbaria997@gmail.com&nbsp;&nbsp; </a></span> <br> 
+              <span class="phone"><a href="tel:+919820976984"><i class="fa fa-phone"></i>&nbsp;&nbsp;&nbsp;&nbsp;+91-9820976984</a></span>
+              <div class="social-icons d-flex">
+                <li><a href="https://wa.me/919820976984" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/mehul-baria-3b4987216/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://www.facebook.com/mehul.baria.7" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/mehul997?igshid=MmU2YjMzNjRIOQ==" target="_blank"><i class="fab fa-instagram"></i></a></li>
+              </div>                  
+          </div>
+          <div class="QAimage">
+              <img src="images/QA.webp" alt="Portfolio Image"/>
+          </div>
+      </div>
+</section>
+<section id="about">
+<div class="about-container">
+  <div class="about-content">
+    <div class="image">
+      <img src="images/hero3.jpg" alt="Profile_Image">
+    </div>
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        I am a Manual tester with strong programming skills in Python.
+      </p>
+        <br>
+      <div class="about-Education">
+        <div class="left-side">
+          <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+          <ul>
+            <li>
+              Master of Computer Application &nbsp;&nbsp;&nbsp;&nbsp;<br>
+              Lovely Professional University &nbsp;&nbsp;&nbsp;&nbsp;
+            </li>
+            <li>Bachelor in Commerce&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                Nirmala Memorial Foundation College of Commerce and Science &nbsp;&nbsp;&nbsp;&nbsp;
+            </li>
+            <li>HSC &nbsp;&nbsp;&nbsp;&nbsp;<br>
+              Nirmala Memorial Foundation College &nbsp;&nbsp;&nbsp;&nbsp;
+            </li>
+            <li>SSC &nbsp;&nbsp;&nbsp;&nbsp;<br>
+              St. Xavier's high school&nbsp;&nbsp;&nbsp;&nbsp;              
+            </li>
+          </ul>
+        </div>
+        <br>
+        <div class="right-side">
+          <h3><i class="far fa-heart"></i> Interests</h3>
+          <ul>
+            <li>Automation Testing</li>
+            <li>Exploring Software</li>
+            <li>Bug Hunting</li>
+            <li>Ethical Hacking</li>
+            <li>Cyber Security</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section id="myskills">
+<div class="skills">
+  <h2>Programming Skills</h2>
+  <ul>
+    <li>
+      <div class="skill-box">
+        <img src="images/pythonlogo.webp" alt="Python Icon" style="width: 50%;">
+        <span>Python</span>
+      </div>
+    </li>
+    <li>
+      <div class="skill-box">
+        <img src="images/html.png" alt="Selenium Icon"style="width: 50%;">
+        <span>HTML</span>
+      </div>
+    </li>
+    <li>
+      <div class="skill-box">
+        <img src="images/css.png" alt="SQL Icon" style="width: 50%;">
+        <span>CSS</span>
+      </div>
+    </li>
+    <li>
+      <div class="skill-box">
+        <img src="images/js.png" alt="API Testing Icon" style="width: 50%;">
+        <span>javascript</span>
+      </div>
+    </li>
+    <!-- <li>
+      <div class="skill-box">
+        <img src="images/automationtesting.webp" alt="Automation Testing Icon" style="width: 50%; border-radius: 20%;" >
+        <span>Automation</span>
+      </div>
+    </li> -->
+  </ul>
+</div>
+</section>
+<section id="certificates">
+<div class="container">
+  <h2 class="project-heading">Certification</h2>
+  <div class="certificate">
+    <div class="certificate-images">
+      <div class="certificate-box">
+        <img src="images/certificate1.png" alt="Certificate 1">
+      </div>
+      <div class="certificate-box">
+        <img src="images/certificate2.png" alt="Certificate 2">
+      </div>
+      <div class="certificate-box">
+        <img src="images/certificate3.png" alt="Certificate 3">
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section id="clients">
+    <h2>Work Experience</h2>
+    <div class="company-list">
+      <div class="company">
+        <div class="company-image">
+          <img src="images/compamy1.png" alt="Company" />
+        </div>
+        <div class="company-info">
+          <h3>AMI Skin and Hair Clinic</h3>
+          <p>Front Desk Executive & Technical Support assistant</p>
+          <p>6 Months</p>
+          <p>I efficiently managed a busy calendar, coordinating appointments seamlessly. Additionally, I accurately filed detailed expense reports and showcased expertise in stock management using Excel. As a proficient cashier, I provided excellent customer service while maintaining cash register accuracy.</p>        </div>
+      </div>
+      <!-- Add more company sections as needed -->
+    </div>
+  </section>
+  <br>
+    <br>
+    </section>
+    <section>
+      <div id="contact">
+        <h2>Contact Me</h2>
+        <form action="mailto:mehulbaria997@gmail.com" method="post" enctype="text/plain">
+          <input type="text" id="name" name="name" placeholder="Your Name" maxlength="50" required>
+          <input type="email" id="email" name="email" placeholder="Your Email" maxlength="50" required>
+          <input type="text" id="phone" name="phone" placeholder="Your Phone Number" pattern="[6-9][0-9]{9}" maxlength="10">
+          <textarea id="message" name="message" placeholder="Your Message" maxlength="250" required></textarea>
+          <button id="sendBtn">Send Message</button>
+        </form>
+      </div>      
+    </section>      
+  <footer>
+      <div class="container">
+          &copy; 2023 My Portfolio
+      </div>
+  </footer>
+  <a href="#" id="scrollToTopButton" title="Scroll to Top"></a>
+</body>
+</html>
